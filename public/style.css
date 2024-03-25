@@ -760,6 +760,10 @@ video {
   width: 14rem;
 }
 
+.w-\[140px\] {
+  width: 140px;
+}
+
 .w-\[360px\] {
   width: 360px;
 }
@@ -774,10 +778,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[140px\] {
-  width: 140px;
 }
 
 .min-w-8 {
@@ -1091,10 +1091,6 @@ video {
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.leading-\[42px\] {
-  line-height: 42px;
 }
 
 .leading-normal {
@@ -1563,10 +1559,6 @@ body{
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .lg\:leading-\[56px\] {
-    line-height: 56px;
   }
 }
 
