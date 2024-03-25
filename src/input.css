@@ -19,6 +19,12 @@ body{
     top: 50px;
     left: 50px;
 }
+@media (max-width: 767px) {
+    .print-button{
+        top: 18px;
+        left: 16px;
+    }
+  }
 
 /********** text animation  *******/
 .text{

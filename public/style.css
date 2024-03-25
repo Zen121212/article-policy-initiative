@@ -788,6 +788,14 @@ video {
   min-width: 370px;
 }
 
+.min-w-\[268px\] {
+  min-width: 268px;
+}
+
+.min-w-\[320px\] {
+  min-width: 320px;
+}
+
 .max-w-1 {
   max-width: 0.25rem;
 }
@@ -989,6 +997,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-24 {
@@ -1224,6 +1236,13 @@ body{
   position: absolute;
   top: 50px;
   left: 50px;
+}
+
+@media (max-width: 767px) {
+  .print-button{
+    top: 18px;
+    left: 16px;
+  }
 }
 
 /********** text animation  *******/
@@ -1486,6 +1505,14 @@ body{
 @media (min-width: 640px) {
   .sm\:w-56 {
     width: 14rem;
+  }
+
+  .sm\:min-w-\[370px\] {
+    min-width: 370px;
+  }
+
+  .sm\:p-5 {
+    padding: 1.25rem;
   }
 
   .sm\:text-3xl {
