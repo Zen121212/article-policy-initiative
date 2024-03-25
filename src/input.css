@@ -57,6 +57,7 @@ body{
     display: block; 
     animation: animateWidth 1.5s forwards;
     animation-delay: 1s;
+    z-index: -1;
 }
 .animate-highlight-black{
     border: 10px red dashed;
