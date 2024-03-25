@@ -181,28 +181,17 @@ body{
     }
   }
 /* *************************** */
+
 /************ SVG hero **************/
 .first-hero-svg {
-    content: url(../SVG/SVG/m21i5N-2.svg);
-    /* width: 498px; */
-    /* position: absolute;
-    bottom: 18%; */
-    /* z-index: 99;
-    left: 60%; */
-    /* transform: translateX(-50%); */
+    content: url(../public/dist/5f425ec5e120546adeb2.svg);
 }
 
 .arrow-down {
-    content: url(../SVG/SVG/Asset\ 4.svg);
-    width: 50px;
-    position: absolute;
-    bottom: 50px;
-    z-index: 99;
-    left: 50%;
-    transform: translateX(-50%);
+    content: url(../public/dist/59c41286da207e308467.svg);
 }
 .left-logo {
-    content: url(../SVG/SVG/Asset\ 3.svg);
+    content: url(../public/dist/6cde0a0cf456bac5cdac.svg);
 }
 
 /* **************************** */
