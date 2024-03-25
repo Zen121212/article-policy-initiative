@@ -41,10 +41,10 @@ body{
 /* Define the keyframes */
 @keyframes animateWidth {
     0% {
-      width: 0;
+      opacity: 0;
     }
     100% {
-      width: 100%;
+      opacity: 1;
     }
   }
   
@@ -59,7 +59,8 @@ body{
 }
 .animate-highlight-black{
     border: 10px red dashed;
-    width: 0;
+    width: 100%;
+    opacity: 0;
     animation: animateWidth 1.5s forwards;
     animation-delay: 1.3s;
 }

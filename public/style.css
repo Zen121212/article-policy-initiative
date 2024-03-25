@@ -784,10 +784,6 @@ video {
   min-width: 2rem;
 }
 
-.min-w-\[370px\] {
-  min-width: 370px;
-}
-
 .min-w-\[268px\] {
   min-width: 268px;
 }
@@ -991,16 +987,16 @@ video {
   background-position: top;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-24 {
@@ -1265,11 +1261,11 @@ body{
 
 @keyframes animateWidth {
   0% {
-    width: 0;
+    opacity: 0;
   }
 
   100% {
-    width: 100%;
+    opacity: 1;
   }
 }
 
@@ -1286,7 +1282,8 @@ body{
 
 .animate-highlight-black{
   border: 10px red dashed;
-  width: 0;
+  width: 100%;
+  opacity: 0;
   animation: animateWidth 1.5s forwards;
   animation-delay: 1.3s;
 }
