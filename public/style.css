@@ -636,6 +636,10 @@ video {
   top: 14%;
 }
 
+.bottom-\[30px\] {
+  bottom: 30px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -754,6 +758,14 @@ video {
 
 .min-h-\[600px\] {
   min-height: 600px;
+}
+
+.min-h-\[90vh\] {
+  min-height: 90vh;
+}
+
+.min-h-\[92vh\] {
+  min-height: 92vh;
 }
 
 .w-56 {
@@ -1506,6 +1518,10 @@ body{
 }
 
 @media (min-width: 640px) {
+  .sm\:min-h-\[100vh\] {
+    min-height: 100vh;
+  }
+
   .sm\:w-56 {
     width: 14rem;
   }
