@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.max-w-container {
+    max-width: 75rem;
+}
+.print-button{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/********** text animation  *******/
+.text{
+    display: inline-block;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 110%, 0% 100%);
+}
+.text .line{
+    width: fit-content !important;
+}
+
+/* *******************txt highlight **********************/
+
+/* Define the keyframes */
+@keyframes animateWidth {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  /* Apply the animation to the pseudo-element */
+.animate-before::before {
+    height: 20px !important;
+    bottom: 9px;
+    background: #EDE836;
+    content: ''; 
+    display: block; 
+    animation: animateWidth 1s forwards;
+}
+.animate-highlight-black{
+    border: 10px red dashed;
+    width: 0;
+    animation: animateWidth 1.5s forwards;
+    animation-delay: 1.3s;
+}
+
+/* ***************************************************** */
+
+/**************** Columns animation *************/
+[class^="animation-columns"] {
+    width: 10px;
+    opacity: 0;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+    background: #87A59D;
+    animation-timing-function: ease-in-out; /* Adding smooth animation */
+}
+.animation-columns-2 {
+    border: 6px dashed #C61D23;
+    width: 0;
+    background: transparent;
+}
+
+.animation-columns-5::before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: relative;
+    border: 1px dashed black;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: block; 
+}
+
+.animation-columns-10 {
+    border: 6px dashed black;
+    width: 0;
+    background: transparent;
+}
+
+.animation-columns-12 {
+    background: #EDE836;
+}
+
+.animation-columns-17::before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: relative;
+    border: 1px dashed black;
+    left: 50%;
+    transform: translateX(-50%);  
+    display: block;
+}
+.animation-columns-23 {
+    background: #EDE836;
+}
+@keyframes animateHeight {
+    from {
+        height: 0; 
+    }
+    to {
+        height: 76vh;
+    }
+}
+
+.animate {
+    animation-name: animateHeight; 
+    opacity: 1;
+}
+/* ******************************** */
+
+
+
+/************* cover logo animation *********/
+.cargo-container {
+    top: -100%;
+    transition: top 1.5s ease; 
+}
+
+.cargo-container.in-viewport {
+    top: 48%;
+}
+
+/* ******************end************************ */
+
+/* ********************cover Mask for column *********/
+.section-4 .column-animation-wrapper::before {
+    content: '';
+    top: 0;
+    height: 97px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    background: linear-gradient(to bottom, rgba(242, 239, 221, 1) 12%, rgba(242, 239, 221, 0));
+}
+/* ************************************************** */
+
+/* mask for cover images */
+.mask-image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, black, transparent);
+    z-index: 1;
+ 
+}
+/* ******************** */
+/* counter column seperater */
+.number-counter-wrapper::before{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 60%;
+    width: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: whitesmoke;
+}
+@media (max-width: 767px) {
+    .number-counter-wrapper::before {
+      height: 1%;
+      width: 80%;
+    }
+  }
+/* *************************** */
+/************ SVG hero **************/
+.first-hero-svg {
+    content: url(../SVG/SVG/m21i5N-2.svg);
+    /* width: 498px; */
+    /* position: absolute;
+    bottom: 18%; */
+    /* z-index: 99;
+    left: 60%; */
+    /* transform: translateX(-50%); */
+}
+
+.arrow-down {
+    content: url(../SVG/SVG/Asset\ 4.svg);
+    width: 50px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.left-logo {
+    content: url(../SVG/SVG/Asset\ 3.svg);
+}
+
+/* **************************** */
