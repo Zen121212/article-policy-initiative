@@ -55,6 +55,7 @@ body{
     background: #EDE836;
     content: ''; 
     display: block; 
+    opacity: 0;
     animation: animateWidth 1.5s forwards;
     animation-delay: 1s;
     z-index: -1;
