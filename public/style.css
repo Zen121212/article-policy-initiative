@@ -1062,6 +1062,10 @@ video {
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .justify-start {
   justify-content: flex-start;
 }
@@ -1697,7 +1701,7 @@ body{
 
 @media (max-width: 640px) {
   .cargo-container.in-viewport  {
-    top: 2%;
+    top: 3%;
   }
 }
 
@@ -1789,8 +1793,8 @@ body{
 
 @media (max-width: 767px) {
   .number-counter-wrapper::before {
-    height: 1%;
-    width: 80%;
+    height: 1%!important;
+    width: 80%!important;
   }
 }
 
@@ -1844,11 +1848,13 @@ body{
 .number-counter-wrapper p{
   /* font-family: 'Times New Roman', Times, serif; */
   font-family: 'Courier New', Courier, monospace;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .number-counter-wrapper h1{
   /* font-family: 'Times New Roman', Times, serif; */
   font-family: 'Courier New', Courier, monospace;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .before\:absolute::before {
