@@ -1701,7 +1701,7 @@ body{
 
 @media (max-width: 640px) {
   .cargo-container.in-viewport  {
-    top: 3%;
+    top: 5%;
   }
 }
 
@@ -1711,7 +1711,7 @@ body{
 }
 
 .globe.in-viewport {
-  top: 45%;
+  top: 46%;
 }
 
 .robot-cover{
