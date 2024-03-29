@@ -279,3 +279,12 @@ body{
     background-repeat: no-repeat;
     bottom: 0;
 }
+
+.number-counter-wrapper p{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Courier New', Courier, monospace;
+}
+.number-counter-wrapper h1{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Courier New', Courier, monospace;
+}
