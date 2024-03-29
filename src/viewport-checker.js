@@ -1,24 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const section4 = document.querySelector('.section-4'); // Select by class
-    const cargoContainers = document.querySelectorAll('.cargo-container'); // Select all elements with class
+    const cargoContainers = document.querySelectorAll('.cargo-container, .globe, .robot-cover, .kessak-cover, .stamp-cover'); // Combine queries
+    const sections = document.querySelectorAll('.section-4, .section-5, .section-8, .section-11, .section-14'); // Select all sections
 
     // Intersection Observer setup
     let observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Add a class to the cargo containers when section-4 is in viewport
-                cargoContainers.forEach(container => {
-                    container.classList.add('in-viewport');
-                });
-            } else {
-                // Remove the class if section-4 is not in viewport
-                cargoContainers.forEach(container => {
-                    container.classList.remove('in-viewport');
-                });
-            }
+        const isInViewport = entries.some(entry => entry.isIntersecting); // Check if any section is in viewport
+        cargoContainers.forEach(container => {
+            container.classList.toggle('in-viewport', isInViewport); // Toggle class based on viewport status
         });
     });
 
-    // Observe section-4
-    observer.observe(section4);
+    // Observe sections
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });

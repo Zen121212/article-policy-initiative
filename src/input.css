@@ -10,17 +10,18 @@ html{
 }
 body{
     overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
 }
 .max-w-container {
     max-width: 75rem;
 }
-.print-button{
+.print-button:not(.final){
     position: absolute;
     top: 50px;
     left: 50px;
 }
 @media (max-width: 767px) {
-    .print-button{
+    .print-button:not(.final){
         top: 18px;
         left: 16px;
     }
@@ -138,14 +139,60 @@ body{
 
 /************* cover logo animation *********/
 .cargo-container {
-    top: -100%;
+    top: -120%;
     transition: top 1.5s ease; 
 }
 
 .cargo-container.in-viewport {
-    top: 48%;
+    top: -24%;
+}
+@media (max-width: 640px) {
+    .cargo-container.in-viewport  {
+        top: 2%;
+    }
+  }
+
+.globe{
+    top: -120%;
+    transition: top 1.5s ease; 
 }
 
+.globe.in-viewport {
+    top: 45%;
+}
+
+.robot-cover{
+    left: 53.5%;
+    bottom:-100%;
+    transition: bottom 1.5s ease; 
+    transition-delay: 350ms;
+}
+
+.robot-cover.in-viewport {
+    bottom: 0;
+}
+
+.kessak-cover{
+    left: 50%;
+    bottom:-100%;
+    transition: bottom 1.5s ease; 
+    transition-delay: 350ms;
+}
+
+.kessak-cover.in-viewport {
+    bottom: 0;
+}
+
+.stamp-cover{
+    left: 50%;
+    bottom:-100%;
+    transition: bottom 1.5s ease; 
+    transition-delay: 350ms;
+}
+
+.stamp-cover.in-viewport {
+    bottom: 14%;
+}
 /* ******************end************************ */
 
 /* ********************cover Mask for column *********/
@@ -173,7 +220,7 @@ body{
 }
 /* ******************** */
 /* counter column seperater */
-.number-counter-wrapper::before{
+.number-counter-wrapper:not(.second):before{
     content: '';
     position: absolute;
     display: block;
@@ -190,11 +237,17 @@ body{
       width: 80%;
     }
   }
+
+.number-counter-wrapper.second{
+ h1{
+    display: inline;
+ }
+}
 /* *************************** */
 
 /************ SVG hero **************/
 .first-hero-svg {
-    content: url(../public/dist/5f425ec5e120546adeb2.svg);
+    content: url(../public/assets/cover-img/Background.svg);
 }
 
 .arrow-down {
@@ -205,3 +258,24 @@ body{
 }
 
 /* **************************** */
+/* *********responsive padding */
+
+.py-32{
+
+}
+@media (max-width: 767px) {
+    .py-32{
+        padding: 32px 16px;
+    }
+  }
+
+/* footer 1*/
+.footer-1::before{
+    content: '';
+    position: absolute;
+    background-image: url(../public/assets/image-prallax/unnamed.png);
+    width: 100%;
+    height: 180px;
+    background-repeat: no-repeat;
+    bottom: 0;
+}
