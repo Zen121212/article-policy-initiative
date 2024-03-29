@@ -22,14 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
             y: -200, // Start from above (y: -100)
             stagger: 0.05,
             delay: 0.02,
-            duration: 0.5,
+            duration: 0.3,
             ease: 'power1.inOut',
         });
         gsap.to('.in-viewport .char', {
             y: 0,
             stagger: 0.05,
             delay: 0.02,
-            duration: 0.5,
+            duration: 0.3,
             ease: 'power1.inOut',
         });
     }

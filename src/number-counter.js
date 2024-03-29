@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const counters = document.querySelectorAll('.counter');
         counters.forEach(counter => {
             const target = +counter.getAttribute('data-target');
-            let currentCount = 0;
+            let currentCount = 100;
             let interval;
 
             function updateCount() {

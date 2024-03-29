@@ -1985,6 +1985,14 @@ body{
     gap: 1.25rem;
   }
 
+  .md\:overflow-visible {
+    overflow: visible;
+  }
+
+  .md\:\!overflow-visible {
+    overflow: visible !important;
+  }
+
   .md\:p-16 {
     padding: 4rem;
   }
