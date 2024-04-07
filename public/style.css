@@ -1187,6 +1187,21 @@ video {
   padding-right: 3.5rem !important;
 }
 
+.\!px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.\!py-20 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -1222,9 +1237,24 @@ video {
   padding-bottom: 3.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-8 {
@@ -1319,10 +1349,6 @@ video {
   font-size: 20px;
 }
 
-.text-\[24px\] {
-  font-size: 24px;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1362,10 +1388,6 @@ video {
   text-transform: uppercase;
 }
 
-.leading-\[16px\] {
-  line-height: 16px;
-}
-
 .leading-normal {
   line-height: 1.5;
 }
@@ -1376,11 +1398,6 @@ video {
 
 .tracking-wider {
   letter-spacing: 0.05em;
-}
-
-.text-\[\#000\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-\[\#7c5739\] {
@@ -1553,6 +1570,17 @@ body{
 }
 
 .print-button:not(.final){
+  pointer-events: none;
+  border-radius: 0;
+  background: #F2EFDD;
+  font-size: 18px;
+  color: black;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.print-button-first{
   position: absolute;
   top: 50px;
   left: 50px;
@@ -1696,7 +1724,8 @@ body{
 }
 
 .cargo-container.in-viewport {
-  top: -24%;
+  /* top: -24%; */
+  top: calc(100% - 1090px);
 }
 
 @media (max-width: 640px) {
@@ -1771,7 +1800,8 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, black, transparent);
+  background: black;
+  opacity: 0.5;
   z-index: 1;
 }
 
@@ -2009,17 +2039,23 @@ body{
     overflow: visible !important;
   }
 
-  .md\:p-16 {
-    padding: 4rem;
-  }
-
   .md\:p-8 {
     padding: 2rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .md\:text-2xl {
@@ -2118,6 +2154,10 @@ body{
     flex-direction: row;
   }
 
+  .xl\:gap-0 {
+    gap: 0px;
+  }
+
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -2138,16 +2178,20 @@ body{
     left: -220px !important;
   }
 
-  .xxxl\:\!left-\[-285px\] {
-    left: -285px !important;
+  .xxxl\:\!left-\[-233px\] {
+    left: -233px !important;
   }
 
-  .xxxl\:left-\[-147px\] {
-    left: -147px;
+  .xxxl\:left-\[-165px\] {
+    left: -165px;
   }
 
   .xxxl\:left-\[-175px\] {
     left: -175px;
+  }
+
+  .xxxl\:left-\[-190px\] {
+    left: -190px;
   }
 
   .xxxl\:\!max-w-\[130px\] {
@@ -2168,10 +2212,6 @@ body{
 
   .xxxl\:\!max-w-\[246px\] {
     max-width: 246px !important;
-  }
-
-  .xxxl\:\!max-w-\[284px\] {
-    max-width: 284px !important;
   }
 }
 
