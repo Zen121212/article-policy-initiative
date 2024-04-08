@@ -174,9 +174,9 @@ body{
 
 .robot-cover{
     left: 53.5%;
-    bottom:-100%;
-    transition: bottom 1.5s ease; 
-    transition-delay: 350ms;
+    bottom:-200%;
+    transition: all 2.5s ease; 
+    transition-delay: 650ms;
 }
 
 .robot-cover.in-viewport {
@@ -185,9 +185,9 @@ body{
 
 .kessak-cover{
     left: 50%;
-    bottom:-100%;
-    transition: bottom 1.5s ease; 
-    transition-delay: 350ms;
+    bottom:-200%;
+    transition: all 2.5s ease; 
+    transition-delay: 650ms;
 }
 
 .kessak-cover.in-viewport {
@@ -196,9 +196,9 @@ body{
 
 .stamp-cover{
     left: 50%;
-    bottom:-100%;
-    transition: bottom 1.5s ease; 
-    transition-delay: 350ms;
+    bottom:-200%;
+    transition: all 2.5s ease; 
+    transition-delay: 650ms;
 }
 
 .stamp-cover.in-viewport {
