@@ -1134,6 +1134,10 @@ video {
   overflow: visible !important;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -2182,9 +2186,7 @@ body{
 
 .img-graph{
   overflow-x: auto;
-  img{
-    min-width: 900px;
-  }
+  min-width: 900px;
 }
 
 .before\:absolute::before {
@@ -2474,12 +2476,8 @@ body{
     position: absolute;
   }
 
-  .xxxl\:\!left-\[-220px\] {
-    left: -220px !important;
-  }
-
-  .xxxl\:\!left-\[-233px\] {
-    left: -233px !important;
+  .xxxl\:\!left-\[-175px\] {
+    left: -175px !important;
   }
 
   .xxxl\:left-\[-165px\] {
@@ -2500,18 +2498,6 @@ body{
 
   .xxxl\:\!max-w-\[176px\] {
     max-width: 176px !important;
-  }
-
-  .xxxl\:\!max-w-\[200px\] {
-    max-width: 200px !important;
-  }
-
-  .xxxl\:\!max-w-\[226px\] {
-    max-width: 226px !important;
-  }
-
-  .xxxl\:\!max-w-\[246px\] {
-    max-width: 246px !important;
   }
 }
 

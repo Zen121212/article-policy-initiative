@@ -511,7 +511,5 @@ body{
 
 .img-graph{
     overflow-x: auto;
-    img{
-        min-width: 900px;
-    }
+    min-width: 900px;
 }
