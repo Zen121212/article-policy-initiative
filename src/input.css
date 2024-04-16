@@ -259,7 +259,7 @@ body{
 
 /************ SVG hero **************/
 .first-hero-svg {
-    content: url(../public/assets/cover-img/Background.svg);
+    content: url(../public/assets/cover-img/Background.webp);
 }
 
 .arrow-down {
